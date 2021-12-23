@@ -1,6 +1,8 @@
-Error-1 on push first commit to Heroku:
-------------------------------------
------------------------------------
+
+
+------------------------------------------------------------------------------------------
+	!!!!   Build errors on your first push to Heroku  !!!!
+------------------------------------------------------------------------------------------
 
 >> git push heroku master
 
@@ -27,28 +29,8 @@ Error-1 on push first commit to Heroku:
 	 ! [remote rejected] master -> master (pre-receive hook declined)
 	error: failed to push some refs to 'https://git.heroku.com/api-flask-mlops.git'
 
+OR
 
-Solution:
----------
-	 
-heroku buildpacks:set heroku/python
-
-
-Resources:
----------
-
-1. https://stackoverflow.com/questions/38841284/cant-push-to-the-heroku
-2. https://devcenter.heroku.com/articles/buildpacks
-
-
-
-Error-2 on push first commit to Heroku:
---------------------------------------
---------------------------------------
-
-
-
->> git push heroku heroku-deployment:main
 	Counting objects: 13, done.
 	Delta compression using up to 12 threads.
 	Compressing objects: 100% (12/12), done.
@@ -72,7 +54,13 @@ Error-2 on push first commit to Heroku:
 	error: failed to push some refs to 'https://git.heroku.com/api-flask-mlops.git'
 
 
-SOlution:
----------
+************************  
+ 	! Note !
+*************************
+1.  Make sure you installed Heroku version is compatible with your installed python version.
+    Visit the below link to get the compatibility:  https://devcenter.heroku.com/articles/stack#stack-support-details
+    Currently, I have python 3.6 (root) and 3.8 (env), and ubuntu 18 so I will install Heroku-18
 
+2. You may need requirement.txt file of pip
+    https://stackoverflow.com/questions/46109465/app-not-compatible-with-buildpack-heroku
 

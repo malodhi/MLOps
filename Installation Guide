@@ -1,0 +1,8 @@
+Heroku Installation:
+
+
+1. Installed default Heroku and then migrate to the relvant stack based on your python
+	sudo snap install --classic heroku
+	https://devcenter.heroku.com/articles/heroku-18-stack#using-heroku-18
+
+

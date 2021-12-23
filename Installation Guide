@@ -1,8 +1,21 @@
-Heroku Installation:
+
+Note:
+
+Don't rely on the video tutorial for deploying your flask api on heroku.
+For example you can't use the alternative of pip, conda, right now.
+You can get all the help needed to understand how heroku works from the
+official documentation:
+https://devcenter.heroku.com/categories/python-support
+
+e.g you can't use conda instead of pip and can't name file any other then requirements.txt
+to deploy your app on heroku.
+
+Resources:
+1. https://devcenter.heroku.com/categories/python-support
+2. https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
+3. https://devcenter.heroku.com/articles/python-support#supported-runtimes
+4. https://devcenter.heroku.com/articles/heroku-18-stack
 
 
-1. Installed default Heroku and then migrate to the relvant stack based on your python
-	sudo snap install --classic heroku
-	https://devcenter.heroku.com/articles/heroku-18-stack#using-heroku-18
 
 

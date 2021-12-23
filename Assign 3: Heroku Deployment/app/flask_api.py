@@ -5,7 +5,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-@app.route('/get-simpleInterest/', methods=['POST'])
+@app.route('/get-simpleInterest/', methods=['GET', 'POST'])
 def get_simpleInterest():
     """
     :return:

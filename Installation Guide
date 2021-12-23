@@ -3,18 +3,35 @@ Note:
 
 Don't rely on the video tutorial for deploying your flask api on heroku.
 For example you can't use the alternative of pip, conda, right now.
-You can get all the help needed to understand how heroku works from the
-official documentation:
+You can get all the help needed to understand how heroku works from the official documentation:
 https://devcenter.heroku.com/categories/python-support
 
 e.g you can't use conda instead of pip and can't name file any other then requirements.txt
 to deploy your app on heroku.
+
+General Instruction:
+1. Create pip envrionment (not conda)
+2. Create your app (flask_api.py, utils.py)
+3. Create Procfile (as an entry point)
+4. Export requirements.txt ($ pip freeze > requirements.txt)
+5. Login to heroku ($ heroku login -i && heroku login)
+6. Initialize git repo, add files and commit
+7. Create heroku app ($ heroku create APP_NAME)
+8. Update heroku stack ($ heroku stack, $ heroku stack:set heroku-18)
+9. Push your repo ($ git push heroku master) -> If unsuccessfull then remove unnecessary package from requirements.txt
+10. Copy the url provided in the git push logs to test server with postman
+
+
 
 Resources:
 1. https://devcenter.heroku.com/categories/python-support
 2. https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app
 3. https://devcenter.heroku.com/articles/python-support#supported-runtimes
 4. https://devcenter.heroku.com/articles/heroku-18-stack
+5. https://devcenter.heroku.com/articles/python-gunicorn
+
+
+
 
 
 

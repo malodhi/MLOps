@@ -5,6 +5,7 @@ contextvars==2.4
 dataclasses==0.8
 fastapi==0.70.1
 Flask==2.0.2
+gunicorn==20.1.0
 idna==3.3
 immutables==0.16
 importlib-metadata==4.8.3

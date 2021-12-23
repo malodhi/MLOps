@@ -1,6 +1,5 @@
 
 Note:
-
 Don't rely on the video tutorial for deploying your flask api on heroku.
 For example you can't use the alternative of pip, conda, right now.
 You can get all the help needed to understand how heroku works from the official documentation:

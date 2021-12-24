@@ -8,6 +8,10 @@ https://devcenter.heroku.com/categories/python-support
 e.g you can't use conda instead of pip and can't name file any other then requirements.txt
 to deploy your app on heroku.
 
+If you have requirements.txt file in your project or app then heroku would run the command:
+$ pip install -r requirements.txt
+
+
 General Instruction:
 1. Create pip envrionment (not conda)
 2. Create your app (flask_api.py, utils.py)
@@ -28,6 +32,11 @@ Resources:
 3. https://devcenter.heroku.com/articles/python-support#supported-runtimes
 4. https://devcenter.heroku.com/articles/heroku-18-stack
 5. https://devcenter.heroku.com/articles/python-gunicorn
+
+
+Heroku Debugging:
+$ heroku logs --tail
+
 
 
 

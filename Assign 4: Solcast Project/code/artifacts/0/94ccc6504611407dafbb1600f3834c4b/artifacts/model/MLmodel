@@ -1,0 +1,20 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.6.9
+  sklearn:
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 0.24.2
+run_id: 94ccc6504611407dafbb1600f3834c4b
+signature:
+  inputs: '[{"name": "Month", "type": "long"}, {"name": "Day", "type": "long"}, {"name":
+    "Temperature", "type": "double"}, {"name": "Precipitation", "type": "double"},
+    {"name": "Humidity", "type": "double"}, {"name": "Pressure", "type": "double"},
+    {"name": "WindDirection", "type": "double"}, {"name": "WindSpeed", "type": "double"},
+    {"name": "DNI", "type": "double"}, {"name": "DHI", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-01-07 13:02:14.117188'
